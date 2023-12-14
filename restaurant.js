@@ -12,6 +12,7 @@ let deliveryToggler = document.querySelector(".delivery-head .toggle");
 let deliveryNav = document.querySelector(".header .delivery");
 let jumpButton = document.querySelector(".food-catagory-small .button");
 let foodCatagorySmall = document.querySelector(".food-catagory-small");
+let foodsmall = document.querySelectorAll(".food-small li");
 let foodCatagory = document.querySelector(".food-catagory");
 let catagories = document.querySelectorAll(".menu .catagory li");
 let catagoryDetails = document.querySelectorAll(".catagory-details .details");
@@ -81,3 +82,8 @@ window.onscroll = () => {
     100
   }%`;
 };
+foodsmall.forEach((element) => {
+  element.addEventListener("click", () => {
+    foodCatagorySmall.classList.remove("active");
+  });
+});
