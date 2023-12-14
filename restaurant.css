@@ -1,0 +1,266 @@
+/** @format */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Lilita One", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+:root {
+  --main-color: #af1223;
+  --second-color: #fdc111;
+}
+body {
+  overflow-x: hidden;
+  background-color: var(--second-color);
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-image: url(./images/506a8475248595.5c4769b9ae20f.png);
+  opacity: 0.1;
+}
+.mobile-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-image: url(./images/506a8475248595.5c4769b9ae20f.png);
+  opacity: 0.1;
+}
+.header,
+.mobile-header {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  z-index: 2;
+}
+.header li {
+  margin-right: 2rem;
+  position: relative;
+}
+.header li::before {
+  position: absolute;
+  content: "";
+  background-color: var(--main-color);
+  bottom: 2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: 0.1s;
+}
+
+.header li:hover::before {
+  width: 100%;
+}
+.drob-menu li {
+  border-bottom: 1px dotted var(--main-color);
+  font-size: 1.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.drob-menu ul li:first-child {
+  border-top: 1px dotted var(--main-color);
+}
+.drob-menu {
+  transition: 0.5s;
+  background-color: var(--second-color);
+  color: var(--main-color);
+  transform: translate(1000px);
+  z-index: 3;
+}
+.drob-menu.active {
+  transform: translateX(0);
+}
+.toggle li {
+  width: 100%;
+  height: 3px;
+  background-color: #af1223;
+  margin-bottom: 10px;
+  transition: 0.1s;
+}
+.toggle.active li:first-child {
+  transform: translateY(13px) rotate(45deg);
+}
+.toggle.active li:last-child {
+  transform: translateY(-13px) rotate(-45deg);
+}
+.toggle.active li:nth-child(2) {
+  visibility: hidden;
+}
+.location-head,
+.delivery-head {
+  background-color: var(--main-color);
+  color: var(--second-color);
+  z-index: 5;
+}
+.location-head a {
+  position: relative;
+  transition: 0.3s;
+}
+.delivery-head a {
+  position: relative;
+  transition: 0.3s;
+}
+.delivery-head a:hover {
+  transform: translateY(-15px) scale(1.2);
+}
+.location-head a:hover {
+  transform: translateY(-15px) scale(1.2);
+}
+
+@media (max-width: 767px) {
+  .location-head {
+    transform: translateX(200%);
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .delivery-head {
+    transition: 0.3s;
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  .food-catagory {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .location-head {
+    transition: 0.3s;
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  .delivery-head {
+    transition: 0.3s;
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  .food-catagory-small {
+    display: none !important;
+  }
+}
+.location-head.active,
+.delivery-head.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.location-head li {
+  border-bottom: 1px dotted var(--second-color);
+  transform: skewY(-5deg);
+  padding: 0.2rem 0;
+}
+.delivery-head li:not(:last-child) {
+  border-bottom: 1px dotted var(--second-color);
+  transform: skewY(-5deg);
+  padding: 0.2rem 0;
+}
+.about-us,
+.menu {
+  color: var(--main-color);
+}
+
+.menu .active {
+  background-color: #af1223;
+  color: var(--second-color);
+}
+.food-small {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+.food-small li {
+  transition: 0.2s;
+  border-bottom: 1px dotted var(--second-color);
+}
+.food-small li:hover {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+.food-catagory-small .food-small {
+  opacity: 0;
+  visibility: hidden;
+}
+.food-catagory-small.active .button .fa-caret-up {
+  transform: rotate(180deg);
+}
+.food-catagory-small.active .food-small {
+  opacity: 1;
+  visibility: visible;
+}
+.menu {
+  background-color: var(--second-color);
+}
+.card {
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+.foods .title {
+  color: var(--main-color);
+}
+.card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card img {
+  transition: 0.3s;
+}
+.card:hover img {
+  transform: translateY(-20px) scale(1.1);
+}
+.card:hover {
+  transform: translateY(-20px);
+}
+.menu-title {
+  color: var(--main-color);
+}
+.drink .title,
+.desert .title {
+  color: var(--main-color);
+}
+.sandwich-disc {
+  padding-bottom: 1.25rem;
+}
+.call {
+  color: var(--second-color);
+  background-color: #af1223;
+}
+.contact {
+  color: var(--second-color);
+  background-color: var(--main-color);
+}
+.contact input {
+  border-bottom: 2px solid var(--second-color);
+}
+.contact .sumbit-button {
+  border: 2px solid var(--second-color);
+  white-space: nowrap;
+}
+.scrollToTop {
+  color: var(--main-color);
+}
+.scroll-progress {
+  background-color: var(--main-color);
+}

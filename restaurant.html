@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willy's Kitchen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="./restaurant.css">
+<link rel="web Icon" href="./images/logo.png" type="png">
+</head>
+<body>
+<div class="mobile-header relative  ">
+  <div class="container flex justify-between items-center  sm:hidden px-4">
+    <div class="logo">
+      <img src="./images/273122224_5205375089512954_3508334382264673378_n-removebg-preview.png" class="h-24 w-auto" alt="">
+    </div>
+    <div class="toggle h-8 w-8 flex flex-wrap items-center z-10 cursor-pointer">
+<li></li>
+<li></li>
+<li></li>
+    </div>
+    </div>
+</div>
+<div class="drob-menu sm:hidden z-40 w-full fixed h-screen">
+  <ul class="list  px-4">
+    <li class="locations">Locations <i class="fa-solid fa-caret-right"></i></li>
+    <li class="delivery" >Delivery&Social <i class="fa-solid fa-caret-right"></i></li>
+  </ul>
+    </div>
+    <div class="header relative  " >
+      <div class="container px-4 uppercase text-center text-xl mx-auto hidden sm:flex items-center justify-between h-24  ">
+<ul class="list flex">
+  <li class="locations cursor-pointer">Locations</li>
+</ul>
+<div class="logo text-center">
+<img src="images/logo.png" class="w-auto mx-auto h-14" alt="">
+<span class="hidden md:inline">Egyptian SmokeHouse</span>
+</div>
+<ul class="list flex">
+  <li class="delivery cursor-pointer">Delivery&social</li>
+</ul>
+</div>
+      </div>
+      <div class="location-head  z-50 fixed top-0 left-0 pb-96">
+<div class="container md:w-96 w-screen   px-5 ">
+<div class="title  flex justify-between pt-7 px-5 text-3xl">
+<span>Locations</span>
+<div class="toggle cursor-pointer">
+  <i class="fa-solid fa-x z-50 text-2xl"></i>
+</div>
+</div>
+<ul class="pb-7 px-4 text-lg">
+<li class="flex justify-between items-center mt-7"> Dokki <a href="https://www.google.com/maps/dir//Willy's+Kitchen,+5+Al+Narges,+Ad+Doqi,+Dokki,+Giza+Governorate+3751320/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1458412e248d427b:0xb8a6df654ef0bc00?sa=X&ved=2ahUKEwiNqaf3soeDAxX_UqQEHcMhC0sQ48ADegQICRAA">View Location</a></li>
+<li class="flex justify-between mt-7">Heliopolis<a href="https://www.google.com/maps/dir//Willy's+Kitchen,+19+Shams+Al+Din+Al+Zahabi,+Al+Golf,+Heliopolis,+Cairo+Governorate+4451423/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14583e18649872e3:0x416ccfb6dec95daa?sa=X&ved=2ahUKEwiRwarPs4eDAxXuV0EAHZfcDvEQ48ADegQIChAA">View Location</a></li>
+<li class="flex justify-between mt-7">Nasr City<a href="https://www.google.com/maps/dir//Willy's+Kitchen,+9+Hafez+Ramadan,+Al+Manteqah+as+Sadesah,+Nasr+City,+Cairo+Governorate+4450477/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14583e0ba229b083:0xc484b3f8c2b750aa?sa=X&ved=2ahUKEwiRwarPs4eDAxXuV0EAHZfcDvEQ48ADegQIAxAA">View Location</a></li>
+<li class="flex justify-between mt-7">Maadi<a href="https://www.google.com/maps/dir//Willy's+Kitchen,+6+ElNasr+St,+Ezbet+Fahmy,+Maadi,+Cairo+Governorate+4234022/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x145839f853d8aaa7:0x2992b2a1bead6a2f?sa=X&ved=2ahUKEwilhM7JtIeDAxV6S0EAHV8EBt0Q48ADegQIBBAA">View Location</a></li>
+<li class="flex justify-between mt-7">New Cairo 1<a href="https://www.google.com/maps/dir/30.0711936,31.2541184/Willy's+Kitchen%D8%8C+Silver+Star+mall,+Banks+area+behind+Downtown+Mall,+Cairo+Governorate%E2%80%AD/@30.0467791,31.1729324,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x14583ce71ac7bb6b:0x8d5477c6c0d985c7!2m2!1d31.420363!2d30.019054?entry=ttu">View Location</a></li>
+<li class="flex justify-between mt-7">Sheikh Zayed City <a href="https://www.google.com/maps/dir//Willy's+Kitchen,+Kargo+Mall,+Al+Shabab+Rd,+Sheikh+Zayed+City,+Giza+Governorate+12593/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14585bdd50ac3669:0xb1b06a405faba712?sa=X&ved=2ahUKEwilhM7JtIeDAxV6S0EAHV8EBt0Q48ADegQIAhAA">View Location</a></li>
+<li class="flex justify-between mt-7">6th of October City<a href="https://www.google.com/maps/dir//Willy's+Kitchen,+Icon+Mall,+Al+Batea-+Moazi+Llmehwar+Al+Markazi,+First+6th+of+October,+6th+of+October+City+(2),+Giza+Governorate+3233020/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x1458577d978fa4c9:0x3ad5563257ce6584?sa=X&ved=2ahUKEwilhM7JtIeDAxV6S0EAHV8EBt0Q48ADegQIARAA">View Location</a></li>
+<li class="flex justify-between mt-7">New Cairo 3<a href="https://www.google.com/maps/dir/30.0711936,31.2541184/Willy's+Kitchen,+Open+Air+Mall,+New+Cairo+3,+Cairo+Governorate+4770203/@30.0854049,31.1078459,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x1457f75b2d3d5be9:0x1b341cab48abbee!2m2!1d31.6284843!2d30.1081861?entry=ttu">View Location</a></li>
+</ul>
+</div>
+      </div>
+      <div class="delivery-head  fixed  z-50  top-0 right-0 pb-96">
+        <div class="container md:w-96 w-screen   px-5 ">
+        <div class="title  flex justify-between pt-7 px-5 text-3xl">
+        <span>Delivery&Social</span>
+        <div class="toggle cursor-pointer">
+          <i class="fa-solid fa-x text-2xl"></i>
+        </div>
+        </div>
+        <ul class="py-5 px-4 text-lg">
+        <li class="flex justify-between items-center mt-7">elmenus<a href="https://www.elmenus.com/cairo/willys-kitchen-kr73">Order Now</a></li>
+        <li class="flex justify-between mt-7">Talabat<a href="https://www.talabat.com/egypt/restaurant/646431/willys-kitchen-dokki--el-thawra-square?aid=8210">Order Now</a></li>
+<li class="flex justify-center text-3xl pt-28">CALL US ON 19256</li>
+      </ul>
+      <div class="social flex justify-center p-4">
+  <a href="https://www.facebook.com/WillysKitchen.eg/"><i class="fa-brands fa-facebook text-3xl mr-6"></i></a>
+  <a href="https://www.instagram.com/willys.kitchen/?hl=en"><i class="fa-brands fa-instagram text-3xl "></i></a>
+</div>
+        </div>
+              </div>
+<div class="about-us  pt-8 pb-5">
+  <div class=" container relative px-4 text-center">
+<div class="intro text-4xl md:text-6xl w-4/5 mx-auto  ">
+  Willy's Kitchen is Cairo's new favourite burger place! Specialized in Nacho Burgers
+</div>
+  </div>
+</div>
+<div class="menu-title  text-4xl xl:text-6xl  xl:text-left text-center mb-6 mt-32">
+  <div class="container px-7 md:px-32  ">
+  Willy's Kitchen Menu
+  </div>
+  </div>
+<div class="menu sticky top-0 shadow-lg  z-10  ">
+  <div class="container px-7 xl:px-32  ">
+<ul class="catagory  flex justify-center md:justify-start pt-5 md:border-b border-black ">
+<li data-cat="foods" class="border duration-300  active py-2 text-2xl px-12 lg:border-b-transparent  border-black cursor-pointer"><a href="#offer" class="block">Food</a></li>
+<li data-cat="drink" class="border duration-300 py-2 text-2xl px-12 border-x-transparent lg:border-b-transparent  border-black cursor-pointer"><a href="#drink" class="block">Drink</a></li>
+<li data-cat="desert" class="border duration-300 py-2 text-2xl px-12 lg:border-b-transparent border-black cursor-pointer"><a href="#desert" class="block">Desert</a></li>
+</ul>
+<ul class="food-catagory  md:flex py-6 hidden">
+  <li class="mr-12 hover:scale-125 duration-300 text-xl capitalize"><a href="#offer">offers</a></li>
+  <li class="mr-12 hover:scale-125 duration-300 text-xl capitalize"><a href="#burger meals">burger meals</a></li>
+  <li class="mr-12 hover:scale-125 duration-300 text-xl capitalize"><a href="#burger">burger</a></li>
+  <li class="mr-12 hover:scale-125 duration-300 text-xl capitalize"><a href="#chicken meals">chicken meals</a></li>
+  <li class="mr-12 hover:scale-125 duration-300 text-xl capitalize"><a href="#chicken">chicken</a></li>
+  <li class="mr-12 hover:scale-125 duration-300 text-xl capitalize"><a href="#nacho meals">nacho meals</a></li>
+  <li class="mr-12 hover:scale-125 duration-300 text-xl capitalize"><a href="#nacho">nacho</a></li>
+  </ul>
+  <div class="food-catagory-small relative  text-center mt-6  md:hidden">
+<div class="button flex justify-center text-xl items-start border cursor-pointer py-3  border-black">
+  <div class="text basis-5/6 ">Jump to</div>
+<div class="top-arrow basis-1/6 ">
+  <i class="fa-solid fa-caret-up duration-300   "></i>
+</div>
+</div>
+<ul class="food-small absolute  w-full duration-300 text-left ">
+  <li class="p-2 text-lg  cursor-pointer"><a href="#offer" class=" block w-full h-full">offers</a></li>
+  <li class="p-2 text-lg cursor-pointer"><a href="#burger meals"  class=" block w-full h-full">burger meals</a></li>
+  <li class="p-2 text-lg cursor-pointer"><a href="#burger"  class=" block w-full h-full">burger</a></li>
+  <li class="p-2 text-lg cursor-pointer"><a href="#chicken meals"  class=" block w-full h-full">chicken meals</a></li>
+  <li class="p-2 text-lg cursor-pointer"><a href="#chicken"  class=" block w-full h-full">chicken</a></li>
+  <li class="p-2 text-lg cursor-pointer"><a href="#nacho meals"  class=" block w-full h-full">nacho meals</a></li>
+  <li class="p-2 text-lg cursor-pointer"><a href="#nacho"  class=" block w-full h-full">nacho</a></li>
+  </ul>
+  </div>
+</div>
+</div>
+<div class="catagory-details">
+<div data-cat="foods" class="foods details ">
+  <div class="container  px-7 md:px-32  mx-auto">
+<div class="offers py-20">
+  <div class="title text-5xl mb-40 text-center xl:text-left border-b-4 border-black border-dotted pb-2 uppercase"><a name="offer">Offers</a></div>
+  <div class="cards grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1  gap-x-4  gap-y-40 ">
+  <div class="card mx-auto w-80 relative p-5 mb-40 md:mb-0 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/offer-1-removebg-preview.png" class=" h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+  big 200gm offer
+    </h3>
+  <p class="sandwich-disc mb-10 pb-5 text-white">200gm sandwich with drink</p>
+  </div>
+  <div class="buy flex justify-between text-lg">
+  <span class="price">117.5EGP</span>
+  <div class="add-sandwich cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/offer-2-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+  Double Double Offer
+    </h3>
+  <p class="sandwich-disc  mb-5 text-white">
+    2 sandwiches 140 gm of your choice, 2 drinks, and 2 classic fries
+  </p>
+  </div>
+  <div class="buy flex justify-between text-lg">
+  <span class="price">220EGP</span>
+  <div class="add-sandwich cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="burger-meals py-20">
+    <div class="title text-5xl mb-44 text-center xl:text-left border-b-4 border-black border-dotted pb-3  uppercase"><a name="burger meals">burger meals</a></div>
+    <div class="cards    grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1  gap-x-4  gap-y-40 ">
+    <div class="card mx-auto w-80 relative p-5  rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-1-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Original Cheese Burger Combo Sandwich
+      </h3>
+    <p class="sandwich-disc mb-10 md:mb-5 text-white">Beef patty, cheese sauce, lettuce, tomato, fresh onions, country sauce
+    </p>
+    </div>
+    <div class="buy flex justify-between text-lg">
+    <span class="price absolute bottom-5 left-5">117-149EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div>
+    <div class="card mx-auto w-80 h-auto  relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-2-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Brooklyn' Shrooms Burger Combo Sandwich
+      </h3>
+    <p class="sandwich-disc mb-10 md:mb-5 text-white">
+      Beef patty, mushrooms, American cheese, country sauce, mushroom sauce
+    </p>
+    </div>
+    <div class="buy  text-lg">
+    <span class="price absolute bottom-5 left-5">134-164EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div>
+    <div class="card mx-auto w-80 relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-3-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Chili Chili Burger Combo Sandwich
+      </h3>
+    <p class="sandwich-disc mb-10 pb-5 md:mb-5 text-white">
+      Beef patty, salami, chili beef, frizzled onions, jalapenos, American cheese, jalapeno sauce
+    </p>
+    </div>
+    <div class="buy  text-lg">
+    <span class="price absolute bottom-5 left-5">150-180EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div>
+    <div class="card mx-auto w-80 relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-4-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Bacon Boss Combo Sandwich
+      </h3>
+    <p class="sandwich-disc leading-6 mb-10 md:mb-5 text-white">
+      Beef patty, beef bacon, grilled mushrooms, American cheese, mayo
+    </p>
+    </div>
+    <div class="buy  text-lg">
+    <span class="price absolute left-5 bottom-5">140-170EGP</span>
+    <div class="add-sandwich absolute right-5 bottom-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-5-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Smokehouse BBQ Burger Combo Sandwich
+      </h3>
+    <p class="sandwich-disc mb-10 md:mb-5 text-white">
+      Beef patty, beef bacon, fried onions, American cheese, hickory BBQ sauce, lettuce, tomato and Louisiana sauce
+    </p>
+    </div>
+    <div class="buy  text-lg">
+    <span class="price absolute left-5 bottom-5">150-180EGP</span>
+    <div class="add-sandwich absolute right-5 bottom-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-6-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Cheese Lava Burger Combo Sandwich
+      </h3>
+    <p class="sandwich-disc pb-10 md:mb-5 text-white">
+      240gm burger patty stuffed with gouda cheese, pickled cucumber, lettuce, gouda cheese, country sauce
+    </p>
+    </div>
+    <div class="buy  text-lg">
+    <span class="price absolute bottom-5 left-5">190EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div>
+    <div class="card mx-auto w-80 relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-7-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Pepperazzi Combo Sandwich
+      </h3>
+    <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+      Beef patty, grilled salami, peppered grilled mushrooms & onions, cheese sauce, country sauce
+    </p>
+    </div>
+    <div class="buy text-lg">
+    <span class="price absolute bottom-5 left-5">155-185EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div>
+    <div class="card mx-auto w-80 relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-8-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Single Big Willy Burger Combo Sandwich
+      </h3>
+    <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+      Beef patty, American cheese, salami with tomato, lettuce, onion, big Willy sauce
+    </p>
+    </div>
+    <div class="buy text-lg">
+    <span class="price absolute bottom-5 left-5">140-170EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-9-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Double Big Willy Combo Sandwich
+      </h3>
+    <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+      Beef patty, American cheese, salami with tomato, lettuce, onion, big Willy sauce
+    </p>
+    </div>
+    <div class="buy text-lg">
+    <span class="price absolute bottom-5 left-5">240EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-10-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Fire Cracker Burger Combo Sandwich
+      </h3>
+    <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+      Beef patty, salami, fried jalapenos, American cheese, jalapeno sauce
+    </p>
+    </div>
+    <div class="buy text-lg">
+    <span class="price absolute bottom-5 left-5">140-170EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-11-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        J Poppers Burger Combo Sandwich
+      </h3>
+    <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+      Beef patty, jalapeno cheddar poppers, American cheese, jalapeno, lettuce, jalapeno sauce
+    </p>
+    </div>
+    <div class="buy text-lg">
+    <span class="price absolute bottom-5 left-5">150-180EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/burger-meals-12-removebg-preview.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Blue Ribbon Burger Combo Sandwich
+      </h3>
+    <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+      Beef patty, pomegranate onion molasses, American cheese, blue cheese sauce
+    </p>
+    </div>
+    <div class="buy text-lg">
+    <span class="price absolute bottom-5 left-5">140-170EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div>
+
+</div>
+</div>
+<div class="burger py-20">
+  <div class="title text-5xl mb-44 text-center xl:text-left border-b-4 border-black border-dotted pb-3  uppercase"><a name="burger">burger </a></div>
+  <div class="cards  grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1  gap-x-4  gap-y-40 ">
+  <div class="card mx-auto w-80 relative p-5  rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-1-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Original Cheese Burger Sandwich
+    </h3>
+  <p class="sandwich-disc mb-10 md:mb-5 text-white">
+    Beef patty, cheese sauce, lettuce, tomato, fresh onions, country sauce
+  </p>
+  </div>
+  <div class="buy flex justify-between text-lg">
+  <span class="price absolute bottom-5 left-5">80-110EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 h-auto  relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-2-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Brooklyn' Shrooms Burger Sandwich
+    </h3>
+  <p class="sandwich-disc mb-10 md:mb-5 text-white">
+    Beef patty, mushrooms, American cheese, country sauce, mushroom sauce
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute bottom-5 left-5">95-125EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-3-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Chili Chili Burger Sandwich
+    </h3>
+  <p class="sandwich-disc mb-10 pb-5 md:mb-5 text-white">
+    Beef patty, salami, chili beef, frizzled onions, jalapenos, American cheese, jalapeno sauce
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute bottom-5 left-5">110-140EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-4-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Bacon Boss Sandwich
+    </h3>
+  <p class="sandwich-disc leading-6 mb-10 md:mb-5 text-white">
+    Beef patty, beef bacon, grilled mushrooms, American cheese, mayo
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute left-5 bottom-5">100-130EGP</span>
+  <div class="add-sandwich absolute right-5 bottom-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-5-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Smokehouse BBQ Burger Sandwich
+    </h3>
+  <p class="sandwich-disc mb-10 md:mb-5 text-white">
+    Beef patty, beef bacon, fried onions, American cheese, hickory BBQ sauce, lettuce, tomato and Louisiana sauce
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute left-5 bottom-5">110-140EGP</span>
+  <div class="add-sandwich absolute right-5 bottom-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-6-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Pepperazzi Sandwich
+    </h3>
+  <p class="sandwich-disc pb-10 md:mb-5 text-white">
+    Beef patty, grilled salami, peppered grilled mushrooms & onions, cheese sauce, country sauce
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute bottom-5 left-5">115-145EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-7-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Single Big Willy Burger Sandwich
+    </h3>
+  <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+    Beef patty, American cheese, salami with tomato, lettuce, onion, big Willy sauce
+  </p>
+  </div>
+  <div class="buy text-lg">
+  <span class="price absolute bottom-5 left-5">100-130EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-8-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Double Big Willy Sandwich
+    </h3>
+  <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+    Beef patty, American cheese, salami with tomato, lettuce, onion, big Willy sauce
+  </p>
+  </div>
+  <div class="buy text-lg">
+  <span class="price absolute bottom-5 left-5">200EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-9-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Fire Cracker Burger Sandwich
+    </h3>
+  <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+    Beef patty, salami, fried jalapenos, American cheese, jalapeno sauce
+  </p>
+  </div>
+  <div class="buy text-lg">
+  <span class="price absolute bottom-5 left-5">100-130EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-10-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      J Poppers Burger Sandwich
+    </h3>
+  <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+    Beef patty, jalapeno cheddar poppers, American cheese, jalapeno, lettuce, jalapeno sauce
+  </p>
+  </div>
+  <div class="buy text-lg">
+  <span class="price absolute bottom-5 left-5">110-140EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-11-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Blue Ribbon Burger Sandwich
+    </h3>
+  <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+    Beef patty, pomegranate onion molasses, American cheese, blue cheese sauce
+  </p>
+  </div>
+  <div class="buy text-lg">
+  <span class="price absolute bottom-5 left-5">100-130EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/burger-12-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Cheese Lava Burger Sandwich
+    </h3>
+  <p class="sandwich-disc pb-10 mb-10 md:mb-5 text-white">
+    240gm burger patty stuffed with gouda cheese, pickled cucumber, lettuce, gouda cheese, country sauce
+  </p>
+  </div>
+  <div class="buy text-lg">
+  <span class="price absolute bottom-5 left-5">150EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+<div class="chicken-meals py-20">
+  <div class="title text-5xl mb-44 text-center xl:text-left border-b-4 border-black border-dotted pb-3  uppercase"><a name="chicken meals">chicken meals</a></div>
+  <div class="cards    grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1  gap-x-4  gap-y-40 ">
+  <div class="card mx-auto w-80 relative p-5  rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/chicken-meal-1-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Crispy Fried Chicken Combo Sandwich
+    </h3>
+  <p class="sandwich-disc mb-10 pb-5 md:mb-5 text-white">
+    Fried chicken breasts, smoked turkey, American cheese, lettuce, tomato, pickled cucumber and Louisiana sauce
+  </p>
+  </div>
+  <div class="buy flex justify-between text-lg">
+  <span class="price absolute bottom-5 left-5">170-220EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 h-auto  relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/chicken-meal-2-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Wild West Chicken Combo Sandwich
+    </h3>
+  <p class="sandwich-disc mb-10 md:mb-5 text-white">
+    Buffalo coated fried chicken, American cheese, lettuce and blue cheese sauce
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute bottom-5 left-5">170-220EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/chicken-meal-3-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Ranchie Crunch Chicken Combo Sandwich
+    </h3>
+  <p class="sandwich-disc mb-10 pb-5 md:mb-5 text-white">
+    Fried chicken breast, smoked turkey, American cheese, lettuce, ranch sauce
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute bottom-5 left-5">170-220EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/chicken-meal-4-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Fire Cracker Chicken Combo Sandwich
+    </h3>
+  <p class="sandwich-disc leading-6 mb-10 md:mb-5 text-white">
+    Fried chicken breast, fried jalapenos, American cheese, lettuce, jalapeno sauce
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute left-5 bottom-5">165EGP</span>
+  <div class="add-sandwich absolute right-5 bottom-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/chicken-meal-5-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Mushroom Melt Chicken Combo Sandwich
+    </h3>
+  <p class="sandwich-disc pb-5 mb-10 md:mb-5 text-white">
+    Fried chicken breast, grilled fresh mushroom, mozzarella cheese, mayo
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute left-5 bottom-5">170EGP</span>
+  <div class="add-sandwich absolute right-5 bottom-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+
+</div>
+</div>
+<div class="chicken py-20">
+  <div class="title text-5xl mb-44 text-center xl:text-left border-b-4 border-black border-dotted pb-3  uppercase"><a name="chicken">chicken</a></div>
+  <div class="cards    grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1  gap-x-4  gap-y-40 ">
+  <div class="card mx-auto w-80 relative p-5  rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/chicken-1-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Crispy Fried Chicken Sandwich
+    </h3>
+  <p class="sandwich-disc pb-5 mb-10 md:mb-5 text-white">
+    Fried chicken breasts, smoked turkey, American cheese, lettuce, tomato, pickled cucumber and Louisiana sauce
+  </p>
+  </div>
+  <div class="buy flex justify-between text-lg">
+  <span class="price absolute bottom-5 left-5">130-250EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 h-auto  relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/chicken-2-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Wild West Chicken Sandwich
+    </h3>
+  <p class="sandwich-disc pb-5 mb-10 md:mb-5 text-white">
+    Buffalo coated fried chicken, American cheese, lettuce and blue cheese sauce
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute bottom-5 left-5">130-250EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/chicken-3-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Ranchie Crunch Chicken Sandwich
+    </h3>
+  <p class="sandwich-disc mb-10 pb-5 md:mb-5 text-white">
+    Fried chicken breast, smoked turkey, American cheese, lettuce, ranch sauce
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute bottom-5 left-5">130-250EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-44">
+      <img src="./images/chicken-4-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Mushroom Melt Chicken Sandwich
+    </h3>
+  <p class="sandwich-disc leading-6 pb-5 mb-10 md:mb-5 text-white">
+    Fried chicken breast, grilled fresh mushroom, mozzarella cheese, mayo
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute left-5 bottom-5">130EGP</span>
+  <div class="add-sandwich absolute right-5 bottom-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div> <div class="card mx-auto w-80 relative p-5 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/chicken-5-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Fire Cracker Chicken Sandwich
+    </h3>
+  <p class="sandwich-disc mb-10 md:mb-5 text-white">
+    Fried chicken breast, fried jalapenos, American cheese, lettuce, jalapeno sauce
+  </p>
+  </div>
+  <div class="buy  text-lg">
+  <span class="price absolute left-5 bottom-5">125EGP</span>
+  <div class="add-sandwich absolute right-5 bottom-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+<div class="nacho-meals py-20">
+  <div class="title text-5xl mb-44 text-center xl:text-left border-b-4 border-black border-dotted pb-3  uppercase"><a name="nacho meals">nacho meals</a></div>
+  <div class="cards     grid-cols-1  gap-x-4  gap-y-40 ">
+  <div class="card mx-auto w-full relative p-5  rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/nacho-meal-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Willy's Nacho Burger Combo Sandwich
+    </h3>
+  <p class="sandwich-disc pb-5 mb-10 md:mb-5 text-white">
+    Beef patty, beef bacon, chili beef, caramelized onions, cheese sauce, jalapeno, jalapeno sauce, deep fried tortilla bread
+  </p>
+  </div>
+  <div class="buy flex justify-between text-lg">
+  <span class="price absolute bottom-5 left-5">175-250EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+
+</div>
+</div>
+<div class="nacho py-20">
+  <div class="title text-5xl mb-44 text-center xl:text-left border-b-4 border-black border-dotted pb-3  uppercase"><a name="nacho">nacho</a></div>
+  <div class="cards     grid-cols-1  gap-x-4  gap-y-40 ">
+  <div class="card mx-auto w-full relative p-5  rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/nacho-removebg-preview.png" class="h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Willy's Nacho Burger Sandwich
+    </h3>
+  <p class="sandwich-disc pb-5 mb-10 md:mb-5 text-white">
+    Beef patty, beef bacon, chili beef, caramelized onions, cheese sauce, jalapeno, jalapeno sauce, deep fried tortilla bread
+  </p>
+  </div>
+  <div class="buy flex justify-between text-lg">
+  <span class="price absolute bottom-5 left-5">135-210EGP</span>
+  <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+
+</div>
+</div>
+  </div>
+</div>
+<div data-cat="desert" class="desert details hidden">
+  <div class="container  px-7 md:px-32  mx-auto">
+<div class="desert-1 py-20">
+  <div class="title text-5xl mb-40 text-center xl:text-left border-b-4 border-black border-dotted pb-2 uppercase"><a name="desert">Desert</a></div>
+  <div class="cards grid xl:grid-cols-2 lg:grid-cols-2 grid-cols-1  gap-x-4  gap-y-20 ">
+  <div class="card mx-auto w-80 relative p-5 mb-28 md:mb-0 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/desert-1-removebg-preview.png" class=" h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Marshmallow Nachos Twisted Puff
+    </h3>
+  <p class="sandwich-disc mb-10 pb-5 text-white">Marshmallow with nutella wrapped in deep fried tortilla
+  </p>
+  </div>
+  <div class="buy flex justify-between text-lg">
+  <span class="price">65EGP</span>
+  <div class="add-sandwich cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+  <div class="card mx-auto w-80 relative p-5 mb-40 md:mb-0 rounded-lg">
+    <div class="sandwich-image absolute -left-16 -top-40">
+      <img src="./images/desert-2-removebg-preview.png" class=" h-52 w-auto" alt="">
+    </div>
+  <div class="sandwich-info">
+    <h3 class="sandwich-name py-5 text-xl">
+      Bananas Nacho Twisted Puff
+    </h3>
+  <p class="sandwich-disc mb-10 pb-5 text-white">4
+    Bananas with nutella wrapped in deep fried tortilla
+  </p>
+  </div>
+  <div class="buy flex justify-between text-lg">
+  <span class="price absolute left-5 bottom-5">60EGP</span>
+  <div class="add-sandwich  absolute right-5 bottom-5 cursor-pointer">
+    <i class="fa-solid fa-circle-plus "></i>
+  </div>
+  </div>
+  </div>
+
+  </div>
+</div>
+  </div>
+</div>
+<div data-cat="drink" class="drink details hidden">
+  <div class="container  px-7 md:px-32  mx-auto">
+<div class="drink-1 py-20">
+  <div class="title text-5xl mb-40 text-center xl:text-left border-b-4 border-black border-dotted pb-2 uppercase"><a name="drink">Drink</a></div>
+  <div class="cards     grid-cols-1  gap-x-4  gap-y-40 ">
+    <div class="card mx-auto w-full relative p-5  rounded-lg">
+      <div class="sandwich-image absolute -left-16 -top-40">
+        <img src="./images/drink.png" class="h-52 w-auto" alt="">
+      </div>
+    <div class="sandwich-info">
+      <h3 class="sandwich-name py-5 text-xl">
+        Willy's Cream Soda
+      </h3>
+    <p class="sandwich-disc pb-5 mb-10 md:mb-5 text-white">
+      A soda drink with a caramel flavor that greatly overpowers the taste of soda, taking care to add a large amount of soda, which is equivalent to the same amount found in imported soft drinks. If you are a fan of the caramel taste, you will like the drink.
+    </p>
+    </div>
+    <div class="buy flex justify-between text-lg">
+    <span class="price absolute bottom-5 left-5">20EGP</span>
+    <div class="add-sandwich absolute bottom-5 right-5 cursor-pointer">
+      <i class="fa-solid fa-circle-plus "></i>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+<div class="contact relative  mt-16 p-16 ">
+  <div class="container  px-4  lg:text-left text-center  justify-center flex flex-wrap lg:flex-nowrap items-center   ">
+    <div class="text">
+      <h3 class="text-5xl">Get the latest</h3>
+      <p class="max-w-xs tracking-widest pt-1">
+        Sign up with your email to receive <br>exclusive news + events for Willy's.
+      </p>
+    </div>
+<input type="email" placeholder="Enter Your Email" class="h-10 mx-10 bg-transparent  my-10  w-full lg:w-2/4 placeholder-inherit focus:outline-none text-xl p-2 ">
+<div class="sumbit-button my-auto p-2 cursor-pointer hover:scale-125 duration-300 px-10 py-2">
+SIGN UP
+</div>
+</div>
+</div>
+<a href="#" class="scrollToTop ">
+  <i class="fa-solid fa-arrow-up fixed text-2xl right-3 bg-white w-5 h-5 p-3 rounded-full bottom-6"></i>
+</a>
+<div class="scroll-progress fixed top-0 left-0 h-1 z-30"></div>
+<span class=" call z-40 fixed -left-10 top-1/2 px-2 rotate-90">Call us 19256</span>
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+   <script src="./restaurant.js"></script>
+</body>
+</html>
